@@ -1,0 +1,21 @@
+#################
+#### LEVEL 3 ####
+#################
+
+synchronized_defenses = {
+	icon = "GFX_spaceport_synchronized_defenses"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	construction_days = 180	
+	prerequisites = {  }
+	spaceport_level = 3
+	
+	cost = {
+		minerals = 250
+	}
+	
+	station_modifier = {
+		ship_hit_points_mult = 0.5
+		ship_shield_hp_add = 250
+		ship_shield_hp_mult = 0.25
+	}
+}

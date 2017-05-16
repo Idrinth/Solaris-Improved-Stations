@@ -2,7 +2,7 @@
 #### LEVEL 3 ####
 #################
 
-synchronized_defenses = {
+strengthened_defenses = {
 	icon = "GFX_spaceport_synchronized_defenses"
 	section = "SCIENCE_SPACEPORT_SECTION"
 	construction_days = 180	

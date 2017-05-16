@@ -1,0 +1,7 @@
+name="Idrinth: Stellaris Improved Stations"
+path="mod/idrinth-stellaris-improved-stations"
+tags={
+	"Military"
+}
+picture="idrinth-stellaris-improved-stations.jpg"
+supported_version="1.6.*"

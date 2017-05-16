@@ -1,0 +1,171 @@
+###########################
+### TECH COSTS - REPEATABLE  ###
+###########################
+
+@repeatableTechBaseCost = 1000
+@repeatableTechLevelCost = 1000
+
+
+###########################
+### TECH WEIGHTS - REPEATABLE  ###
+###########################
+
+@repeatableTechWeight = 1
+@repatableTechFactor = 0.75
+
+###########################
+### TECHS - Tier 1 ###
+###########################
+
+tech_repeatable_improved_military_station_structure = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 1
+	category = { voidcraft }
+	levels = -1
+	prerequisites = { }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		shipclass_military_station_damage_mult = 0.1
+		shipclass_military_station_hit_points_mult = 0.15
+
+		shipclass_observation_station_damage_mult = 0.1
+		shipclass_observation_station_hit_points_mult = 0.15
+
+		shipclass_outpost_station_damage_mult = 0.1
+		shipclass_outpost_station_hit_points_mult = 0.15
+
+		shipclass_wormhole_station_damage_mult = 0.1
+		shipclass_wormhole_station_hit_points_mult = 0.15
+
+		shipclass_research_station_damage_mult = 0.1
+		shipclass_research_station_hit_points_mult = 0.15
+
+		shipclass_mining_station_damage_mult = 0.1
+		shipclass_mining_station_hit_points_mult = 0.15
+
+		shipclass_orbital_station_damage_mult = 0.1
+		shipclass_orbital_station_hit_points_mult = 0.15
+	}
+}
+
+tech_repeatable_improved_military_station_crewtraining = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 1
+	category = { voidcraft }
+	levels = -1
+	prerequisites = { }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		shipclass_military_station_damage_mult = 0.05
+		shipclass_military_station_fire_rate_mult = 0.15
+		shipclass_military_station_hit_points_mult = 0.05
+
+		shipclass_observation_station_damage_mult = 0.05
+		shipclass_observation_station_fire_rate_mult = 0.15
+		shipclass_observation_station_hit_points_mult = 0.05
+
+		shipclass_outpost_station_damage_mult = 0.05
+		shipclass_outpost_station_fire_rate_mult = 0.15
+		shipclass_outpost_station_hit_points_mult = 0.05
+
+		shipclass_wormhole_station_damage_mult = 0.05
+		shipclass_wormhole_station_fire_rate_mult = 0.15
+		shipclass_wormhole_station_hit_points_mult = 0.05
+
+		shipclass_research_station_damage_mult = 0.05
+		shipclass_research_station_fire_rate_mult = 0.15
+		shipclass_research_station_hit_points_mult = 0.05
+
+		shipclass_mining_station_damage_mult = 0.05
+		shipclass_mining_station_fire_rate_mult = 0.15
+		shipclass_mining_station_hit_points_mult = 0.05
+
+		shipclass_orbital_station_damage_mult = 0.05
+		shipclass_orbital_station_fire_rate_mult = 0.15
+		shipclass_orbital_station_hit_points_mult = 0.05
+	}
+}
+tech_repeatable_improved_military_station_shields = {
+	area = physics
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 1
+	category = { voidcraft }
+	levels = -1
+	prerequisites = { }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		shipclass_military_station_shield_hp_mult = 0.2
+		shipclass_military_station_weapon_range_mult = 0.05
+
+		shipclass_observation_station_shield_hp_mult = 0.2
+		shipclass_observation_station_weapon_range_mult = 0.05
+
+		shipclass_outpost_station_shield_hp_mult = 0.2
+		shipclass_outpost_station_weapon_range_mult = 0.05
+
+		shipclass_wormhole_station_shield_hp_mult = 0.2
+		shipclass_wormhole_station_weapon_range_mult = 0.05
+
+		shipclass_research_station_shield_hp_mult = 0.2
+		shipclass_research_station_weapon_range_mult = 0.05
+
+		shipclass_mining_station_shield_hp_mult = 0.2
+		shipclass_mining_station_weapon_range_mult = 0.05
+
+		shipclass_orbital_station_shield_hp_mult = 0.2
+		shipclass_orbital_station_weapon_range_mult = 0.05
+	}
+}

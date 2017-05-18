@@ -1,21 +1,32 @@
-#################
-#### LEVEL 3 ####
-#################
+sm_idrinthstellarisimprovedstations_strengthened_defenses = {
+    icon = "GFX_spaceport_synchronized_defenses"
+    section = "SCIENCE_SPACEPORT_SECTION"
+    construction_days = 360
+    prerequisites = { tech_ship_armor_2 }
+    spaceport_level = 3
+    cost = {
+        minerals = 250
+        energy = 250
+    }
+    required_resources = {
+        minerals = 4
+        energy = 1
+    }
+    station_modifier = {
+        ship_hit_points_mult = 0.5
+        ship_hitpoints_mult = 0.5
+        ship_hit_points_add = 500
+        ship_hitpoints_add = 500
+        ship_auto_repair_add = 0.025
+        ship_auto_repair_mult = 0.1
 
-strengthened_defenses = {
-	icon = "GFX_spaceport_synchronized_defenses"
-	section = "SCIENCE_SPACEPORT_SECTION"
-	construction_days = 180	
-	prerequisites = {  }
-	spaceport_level = 3
-	
-	cost = {
-		minerals = 250
-	}
-	
-	station_modifier = {
-		ship_hit_points_mult = 0.5
-		ship_shield_hp_add = 250
-		ship_shield_hp_mult = 0.25
-	}
+        ship_shield_hp_add = 500
+        ship_shield_hp_mult = 0.5
+        ship_shield_regen_add = 0.5
+        ship_shield_regen_mult = 0.1
+        ship_shield_regen_add_perc = 0.005
+
+        ship_armor_mult = 0.1
+        ship_armor_add = 5
+    }
 }

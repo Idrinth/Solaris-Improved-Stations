@@ -1,62 +1,72 @@
 country_edict = {
-	name = "defensive_stations"
-	modifier = {
-		shipclass_military_station_shield_hp_mult = 0.25
-		shipclass_military_station_hit_points_mult = 0.25
+    name = "idrinthstellarisimprovedstations_defensive_stations"
+    modifier = {
+        shipclass_military_station_shield_hp_mult = 0.25
+        shipclass_military_station_hit_points_mult = 0.25
 
-		shipclass_observation_station_shield_hp_mult = 0.25
-		shipclass_observation_station_hit_points_mult = 0.25
+        shipclass_observation_station_shield_hp_mult = 0.25
+        shipclass_observation_station_hit_points_mult = 0.25
 
-		shipclass_outpost_station_shield_hp_mult = 0.25
-		shipclass_outpost_station_hit_points_mult = 0.25
+        shipclass_outpost_station_shield_hp_mult = 0.25
+        shipclass_outpost_station_hit_points_mult = 0.25
 
-		shipclass_wormhole_station_shield_hp_mult = 0.25
-		shipclass_wormhole_station_hit_points_mult = 0.25
+        shipclass_wormhole_station_shield_hp_mult = 0.25
+        shipclass_wormhole_station_hit_points_mult = 0.25
 
-		shipclass_research_station_shield_hp_mult = 0.25
-		shipclass_research_station_hit_points_mult = 0.25
+        shipclass_research_station_shield_hp_mult = 0.25
+        shipclass_research_station_hit_points_mult = 0.25
 
-		shipclass_mining_station_shield_hp_mult = 0.25
-		shipclass_mining_station_hit_points_mult = 0.25
+        shipclass_mining_station_shield_hp_mult = 0.25
+        shipclass_mining_station_hit_points_mult = 0.25
 
-		shipclass_orbital_station_shield_hp_mult = 0.25
-		shipclass_orbital_station_hit_points_mult = 0.25
-	}
-	
-	influence_cost = 1
-	
-	ai_weight = {
-		weight = 0.1
-	}
+        shipclass_orbital_station_shield_hp_mult = 0.25
+        shipclass_orbital_station_hit_points_mult = 0.25
+    }
+    influence_cost = 1
+    prerequisites = { tech_idrinthstellarisimprovedstations_defense }
+    ai_weight = {
+        weight = 0.1
+    }
 }
 country_edict = {
-	name = "offensive_stations"
-	modifier = {
-		shipclass_military_station_weapon_range_mult = 0.25
-		shipclass_military_station_fire_rate_mult = 0.25
+    name = "idrinthstellarisimprovedstations_offensive_stations"
+    modifier = {
+        shipclass_military_station_weapon_range_mult = 0.25
+        shipclass_military_station_fire_rate_mult = 0.25
 
-		shipclass_observation_station_weapon_range_mult = 0.25
-		shipclass_observation_station_fire_rate_mult = 0.25
+        shipclass_observation_station_weapon_range_mult = 0.25
+        shipclass_observation_station_fire_rate_mult = 0.25
 
-		shipclass_outpost_station_weapon_range_mult = 0.25
-		shipclass_outpost_station_fire_rate_mult = 0.25
+        shipclass_outpost_station_weapon_range_mult = 0.25
+        shipclass_outpost_station_fire_rate_mult = 0.25
 
-		shipclass_wormhole_station_weapon_range_mult = 0.25
-		shipclass_wormhole_station_fire_rate_mult = 0.25
+        shipclass_wormhole_station_weapon_range_mult = 0.25
+        shipclass_wormhole_station_fire_rate_mult = 0.25
 
-		shipclass_research_station_weapon_range_mult = 0.25
-		shipclass_research_station_fire_rate_mult = 0.25
+        shipclass_research_station_weapon_range_mult = 0.25
+        shipclass_research_station_fire_rate_mult = 0.25
 
-		shipclass_mining_station_weapon_range_mult = 0.25
-		shipclass_mining_station_fire_rate_mult = 0.25
+        shipclass_mining_station_weapon_range_mult = 0.25
+        shipclass_mining_station_fire_rate_mult = 0.25
 
-		shipclass_orbital_station_weapon_range_mult = 0.25
-		shipclass_orbital_station_fire_rate_mult = 0.25
-	}
-	
-	influence_cost = 1
-	
-	ai_weight = {
-		weight = 0.1
-	}
+        shipclass_orbital_station_weapon_range_mult = 0.25
+        shipclass_orbital_station_fire_rate_mult = 0.25
+    }
+    influence_cost = 1
+    prerequisites = { tech_idrinthstellarisimprovedstations_offence }
+    ai_weight = {
+        weight = 0.1
+    }
+}
+country_edict = {
+    name = "self_repair"
+    modifier = {
+        ship_auto_repair_add = 0.005
+        ship_shield_regen_add = 0.1
+    }
+    influence_cost = 0.5
+    prerequisites = { tech_idrinthstellarisimprovedstations_automatic_repair }
+    ai_weight = {
+        weight = 0.1
+    }
 }

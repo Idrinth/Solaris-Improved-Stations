@@ -30,3 +30,40 @@ sm_idrinthstellarisimprovedstations_strengthened_defenses = {
         ship_armor_add = 5
     }
 }
+sm_idrinthstellarisimprovedstations_fleetbase = {
+    icon = "GFX_spaceport_synchronized_defenses"
+    section = "SCIENCE_SPACEPORT_SECTION"
+    construction_days = 720
+    prerequisites = { }
+    spaceport_level = 6
+    cost = {
+        minerals = 500
+    }
+    required_resources = {
+        minerals = 3
+        energy = 1
+        influence = 1
+    }
+    modifier = {
+        navy_size_add = 6
+        navy_size_mult = 0.05
+    }
+    orbit_modifier = {
+        ship_upkeep_mult = -0.2
+    }
+    ship_modifier = {
+        ship_upkeep_mult = -0.05
+    }
+    planet_modifier = {
+        planet_unrest_add = -10
+        planet_border_extrusion_range_add = 1
+        planet_border_extrusion_range_mult = 0.25
+    }
+    station_modifier = {
+        ship_border_extrusion_range_add = 1
+        ship_hit_points_add = 500
+        ship_hitpoints_add = 500
+
+        ship_armor_add = 5
+    }
+}

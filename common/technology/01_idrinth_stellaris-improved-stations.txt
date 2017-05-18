@@ -23,6 +23,40 @@ tech_idrinthstellarisimprovedstations_border_guards = {
         shipclass_orbital_station_border_extrusion_range_add = 1
     }
 }
+tech_idrinthstellarisimprovedstations_target_practice = {
+    cost = @tier1TechCost
+    cost_per_level = @tier1TechCost
+    levels = -1
+    area = society
+    tier = 1
+    category = { military_theory }
+    weight = @repeatableTechWeight
+    modifier = {
+        ship_accuracy_add = 0.1
+        ship_accuracy_mult = 0.01
+
+        shipclass_military_station_accuracy_add = 0.5
+        shipclass_military_station_accuracy_mult = 0.05
+
+        shipclass_observation_station_accuracy_add = 0.5
+        shipclass_observation_station_accuracy_mult = 0.05
+
+        shipclass_outpost_station_accuracy_add = 0.5
+        shipclass_outpost_station_accuracy_mult = 0.05
+
+        shipclass_wormhole_station_accuracy_add = 0.5
+        shipclass_wormhole_station_accuracy_mult = 0.05
+
+        shipclass_research_station_accuracy_add = 0.5
+        shipclass_research_station_accuracy_mult = 0.05
+
+        shipclass_mining_station_accuracy_add = 0.5
+        shipclass_mining_station_accuracy_mult = 0.05
+
+        shipclass_orbital_station_accuracy_add = 0.5
+        shipclass_orbital_station_accuracy_mult = 0.05
+    }
+}
 tech_idrinthstellarisimprovedstations_workers = {
     cost = @tier1TechCost
     area = engineering

@@ -10,9 +10,8 @@
 ### TECHS - Tier 0 ###
 ###########################
 tech_idrinthstellarisimprovedstations_base = {
-    cost = @tier1TechCost
     area = engineering
-    tier = 1
+    tier = 0
     category = { voidcraft }
     prerequisites = { }
     start_tech = yes
@@ -27,8 +26,6 @@ tech_idrinthstellarisimprovedstations_base = {
         shipclass_research_station_hit_points_mult = 1
 
         shipclass_mining_station_hit_points_mult = 1
-
-        shipclass_orbital_station_hit_points_mult = 1
     }
 }
 

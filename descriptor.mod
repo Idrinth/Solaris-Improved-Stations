@@ -1,7 +1,7 @@
 name="Idrinth: Stellaris Improved Stations"
 path="mod/idrinth-stellaris-improved-stations"
 tags={
-    "Military",
+    "Military"
     "Buildings"
     "Technologies"
     "Balance"

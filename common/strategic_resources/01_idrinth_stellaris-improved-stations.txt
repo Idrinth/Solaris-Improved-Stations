@@ -3,7 +3,7 @@ sr_engineering_testground = {
     prerequisites = { }
     tradable = no
     is_rare = yes
-    is_global = no
+    is_global = yes
 
     modifier = {	
         shipclass_military_station_hit_points_mult = 0.1

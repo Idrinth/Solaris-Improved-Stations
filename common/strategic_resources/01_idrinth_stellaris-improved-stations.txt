@@ -1,0 +1,23 @@
+sr_engineering_testground = {
+    AI_category = strategic_resource
+    prerequisites = { }
+    tradable = no
+    is_rare = yes
+    is_global = no
+
+    modifier = {	
+        shipclass_military_station_hit_points_mult = 0.1
+
+        shipclass_observation_station_hit_points_mult = 0.1
+
+        shipclass_outpost_station_hit_points_mult = 0.1
+
+        shipclass_wormhole_station_hit_points_mult = 0.1
+
+        shipclass_research_station_hit_points_mult = 0.1
+
+        shipclass_mining_station_hit_points_mult = 0.1
+
+        shipclass_orbital_station_hit_points_mult = 0.1
+    }
+}

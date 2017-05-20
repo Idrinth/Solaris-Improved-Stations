@@ -1,26 +1,19 @@
 country_edict = {
     name = "idrinthstellarisimprovedstations_defensive_stations"
     modifier = {
-        shipclass_military_station_shield_hp_mult = 0.25
-        shipclass_military_station_hit_points_mult = 0.25
+        shipclass_military_station_hit_points_mult = 0.5
 
-        shipclass_observation_station_shield_hp_mult = 0.25
-        shipclass_observation_station_hit_points_mult = 0.25
+        shipclass_observation_station_hit_points_mult = 0.5
 
-        shipclass_outpost_station_shield_hp_mult = 0.25
-        shipclass_outpost_station_hit_points_mult = 0.25
+        shipclass_outpost_station_hit_points_mult = 0.5
 
-        shipclass_wormhole_station_shield_hp_mult = 0.25
-        shipclass_wormhole_station_hit_points_mult = 0.25
+        shipclass_wormhole_station_hit_points_mult = 0.5
 
-        shipclass_research_station_shield_hp_mult = 0.25
-        shipclass_research_station_hit_points_mult = 0.25
+        shipclass_research_station_hit_points_mult = 0.5
 
-        shipclass_mining_station_shield_hp_mult = 0.25
-        shipclass_mining_station_hit_points_mult = 0.25
+        shipclass_mining_station_hit_points_mult = 0.5
 
-        shipclass_orbital_station_shield_hp_mult = 0.25
-        shipclass_orbital_station_hit_points_mult = 0.25
+        shipclass_orbital_station_hit_points_mult = 0.5
     }
     influence_cost = 1
     prerequisites = { tech_idrinthstellarisimprovedstations_defense }
@@ -31,26 +24,19 @@ country_edict = {
 country_edict = {
     name = "idrinthstellarisimprovedstations_offensive_stations"
     modifier = {
-        shipclass_military_station_weapon_range_mult = 0.25
-        shipclass_military_station_fire_rate_mult = 0.25
+        shipclass_military_station_damage_mult = 0.35
 
-        shipclass_observation_station_weapon_range_mult = 0.25
-        shipclass_observation_station_fire_rate_mult = 0.25
+        shipclass_observation_station_damage_mult = 0.35
 
-        shipclass_outpost_station_weapon_range_mult = 0.25
-        shipclass_outpost_station_fire_rate_mult = 0.25
+        shipclass_outpost_station_damage_mult = 0.35
 
-        shipclass_wormhole_station_weapon_range_mult = 0.25
-        shipclass_wormhole_station_fire_rate_mult = 0.25
+        shipclass_wormhole_station_damage_mult = 0.35
 
-        shipclass_research_station_weapon_range_mult = 0.25
-        shipclass_research_station_fire_rate_mult = 0.25
+        shipclass_research_station_damage_mult = 0.35
 
-        shipclass_mining_station_weapon_range_mult = 0.25
-        shipclass_mining_station_fire_rate_mult = 0.25
+        shipclass_mining_station_damage_mult = 0.35
 
-        shipclass_orbital_station_weapon_range_mult = 0.25
-        shipclass_orbital_station_fire_rate_mult = 0.25
+        shipclass_orbital_station_damage_mult = 0.35
     }
     influence_cost = 1
     prerequisites = { tech_idrinthstellarisimprovedstations_offence }

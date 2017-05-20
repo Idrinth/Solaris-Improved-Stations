@@ -13,45 +13,24 @@ building_engineering_academy = {
     }
 
     required_resources = {
-        mineral = 10
+        minerals = 10
         energy = 2
     }
 
     country_modifier = {
-        shipclass_military_station_shield_hp_mult = 0.1
-        shipclass_military_station_hit_points_mult = 0.1
-        shipclass_military_station_armor_mult = 0.1
-        shipclass_military_station_auto_repair_mult = 0.1
+        shipclass_military_station_hit_points_mult = 0.25
 
-        shipclass_observation_station_shield_hp_mult = 0.1
-        shipclass_observation_station_hit_points_mult = 0.1
-        shipclass_observation_station_armor_mult = 0.1
-        shipclass_observation_station_auto_repair_mult = 0.1
+        shipclass_observation_station_hit_points_mult = 0.25
 
-        shipclass_outpost_station_shield_hp_mult = 0.1
-        shipclass_outpost_station_hit_points_mult = 0.1
-        shipclass_outpost_station_armor_mult = 0.1
-        shipclass_outpost_station_auto_repair_mult = 0.1
+        shipclass_outpost_station_hit_points_mult = 0.25
 
-        shipclass_wormhole_station_shield_hp_mult = 0.1
-        shipclass_wormhole_station_hit_points_mult = 0.1
-        shipclass_wormhole_station_armor_mult = 0.1
-        shipclass_wormhole_station_auto_repair_mult = 0.1
+        shipclass_wormhole_station_hit_points_mult = 0.25
 
-        shipclass_research_station_shield_hp_mult = 0.1
-        shipclass_research_station_hit_points_mult = 0.1
-        shipclass_research_station_armor_mult = 0.1
-        shipclass_research_station_auto_repair_mult = 0.1
+        shipclass_research_station_hit_points_mult = 0.25
 
-        shipclass_mining_station_shield_hp_mult = 0.1
-        shipclass_mining_station_hit_points_mult = 0.1
-        shipclass_mining_station_armor_mult = 0.1
-        shipclass_mining_station_auto_repair_mult = 0.1
+        shipclass_mining_station_hit_points_mult = 0.25
 
-        shipclass_orbital_station_shield_hp_mult = 0.1
-        shipclass_orbital_station_hit_points_mult = 0.1
-        shipclass_orbital_station_armor_mult = 0.1
-        shipclass_orbital_station_auto_repair_mult = 0.1
+        shipclass_orbital_station_hit_points_mult = 0.25
     }
 
     potential = {

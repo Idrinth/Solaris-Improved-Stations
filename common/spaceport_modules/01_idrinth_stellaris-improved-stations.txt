@@ -13,10 +13,8 @@ sm_idrinthstellarisimprovedstations_strengthened_defenses = {
         energy = 1
     }
     station_modifier = {
-        ship_hit_points_mult = 0.5
         ship_hitpoints_mult = 0.5
-        ship_hit_points_add = 500
-        ship_hitpoints_add = 500
+        ship_hitpoints_add = 1000
         ship_auto_repair_add = 0.025
         ship_auto_repair_mult = 0.1
 
@@ -44,9 +42,8 @@ sm_idrinthstellarisimprovedstations_fleetbase = {
         energy = 1
         influence = 1
     }
-    modifier = {
-        navy_size_add = 6
-        navy_size_mult = 0.05
+    produced_resources = {
+        sr_engineering_testground=1
     }
     orbit_modifier = {
         ship_upkeep_mult = -0.2
@@ -56,12 +53,9 @@ sm_idrinthstellarisimprovedstations_fleetbase = {
     }
     planet_modifier = {
         planet_unrest_add = -10
-        planet_border_extrusion_range_add = 1
-        planet_border_extrusion_range_mult = 0.25
     }
     station_modifier = {
         ship_border_extrusion_range_add = 1
-        ship_hit_points_add = 500
         ship_hitpoints_add = 500
 
         ship_armor_add = 5

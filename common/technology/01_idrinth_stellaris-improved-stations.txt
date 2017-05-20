@@ -2,61 +2,39 @@
 @tier2TechCost = 1900
 @tier3TechCost = 2700
 @tier4TechCost = 3400
-@tier4TechCost = 4000
+@tier5TechCost = 4000
 @repeatableTechWeight = 1
 @repatableTechFactor = 0.75
 
 ###########################
+### TECHS - Tier 0 ###
+###########################
+tech_idrinthstellarisimprovedstations_base = {
+    cost = @tier1TechCost
+    area = engineering
+    tier = 1
+    category = { voidcraft }
+    prerequisites = { }
+    start_tech = yes
+
+    modifier = {
+        shipclass_observation_station_hit_points_mult = 1
+
+        shipclass_outpost_station_hit_points_mult = 1
+
+        shipclass_wormhole_station_hit_points_mult = 1
+
+        shipclass_research_station_hit_points_mult = 1
+
+        shipclass_mining_station_hit_points_mult = 1
+
+        shipclass_orbital_station_hit_points_mult = 1
+    }
+}
+
+###########################
 ### TECHS - Tier 1 ###
 ###########################
-tech_idrinthstellarisimprovedstations_border_guards = {
-    cost = @tier1TechCost
-    area = society
-    tier = 1
-    category = { statecraft }
-    weight = @repeatableTechWeight
-    modifier = {
-        shipclass_military_station_border_extrusion_range_add = 1
-
-        shipclass_outpost_station_border_extrusion_range_add = 1
-
-        shipclass_orbital_station_border_extrusion_range_add = 1
-    }
-}
-tech_idrinthstellarisimprovedstations_target_practice = {
-    cost = @tier1TechCost
-    cost_per_level = @tier1TechCost
-    levels = -1
-    area = society
-    tier = 1
-    category = { military_theory }
-    weight = @repeatableTechWeight
-    modifier = {
-        ship_accuracy_add = 0.1
-        ship_accuracy_mult = 0.01
-
-        shipclass_military_station_accuracy_add = 0.5
-        shipclass_military_station_accuracy_mult = 0.05
-
-        shipclass_observation_station_accuracy_add = 0.5
-        shipclass_observation_station_accuracy_mult = 0.05
-
-        shipclass_outpost_station_accuracy_add = 0.5
-        shipclass_outpost_station_accuracy_mult = 0.05
-
-        shipclass_wormhole_station_accuracy_add = 0.5
-        shipclass_wormhole_station_accuracy_mult = 0.05
-
-        shipclass_research_station_accuracy_add = 0.5
-        shipclass_research_station_accuracy_mult = 0.05
-
-        shipclass_mining_station_accuracy_add = 0.5
-        shipclass_mining_station_accuracy_mult = 0.05
-
-        shipclass_orbital_station_accuracy_add = 0.5
-        shipclass_orbital_station_accuracy_mult = 0.05
-    }
-}
 tech_idrinthstellarisimprovedstations_workers = {
     cost = @tier1TechCost
     area = engineering
@@ -67,36 +45,34 @@ tech_idrinthstellarisimprovedstations_workers = {
     weight = @repeatableTechWeight
 
     modifier = {
-        shipclass_military_station_build_cost_mult = -0.05
-        shipclass_military_station_upkeep_mult = -0.05
+        shipclass_military_station_build_cost_mult = -0.1
+        shipclass_military_station_hit_points_mult = 0.05
 
-        shipclass_observation_station_build_cost_mult = -0.05
-        shipclass_observation_station_upkeep_mult = -0.05
+        shipclass_observation_station_build_cost_mult = -0.1
+        shipclass_observation_station_hit_points_mult = 0.05
 
-        shipclass_outpost_station_build_cost_mult = -0.05
-        shipclass_outpost_station_upkeep_mult = -0.05
+        shipclass_outpost_station_build_cost_mult = -0.1
+        shipclass_outpost_station_hit_points_mult = 0.05
 
-        shipclass_wormhole_station_build_cost_mult = -0.05
-        shipclass_wormhole_station_upkeep_mult = -0.05
+        shipclass_wormhole_station_build_cost_mult = -0.1
+        shipclass_wormhole_station_hit_points_mult = 0.05
 
-        shipclass_research_station_build_cost_mult = -0.05
-        shipclass_research_station_upkeep_mult = -0.05
+        shipclass_research_station_build_cost_mult = -0.1
+        shipclass_research_station_hit_points_mult = 0.05
 
-        shipclass_mining_station_build_cost_mult = -0.05
-        shipclass_mining_station_upkeep_mult = -0.05
+        shipclass_mining_station_build_cost_mult = -0.1
+        shipclass_mining_station_hit_points_mult = 0.05
 
-        shipclass_orbital_station_build_cost_mult = -0.05
-        shipclass_orbital_station_upkeep_mult = -0.05
+        shipclass_orbital_station_build_cost_mult = -0.1
+        shipclass_orbital_station_hit_points_mult = 0.05
     }
 }
 
 tech_idrinthstellarisimprovedstations_structure = {
     area = engineering
     cost = @tier1TechCost
-    cost_per_level = @tier1TechCost
     tier = 1
     category = { materials }
-    levels = -1
     prerequisites = { tech_ship_armor_1 }
     weight = @repeatableTechWeight
     weight_modifier = {
@@ -113,42 +89,77 @@ tech_idrinthstellarisimprovedstations_structure = {
     }
     modifier = {
         shipclass_military_station_damage_mult = 0.1
+        shipclass_military_station_hit_points_mult = 0.2
+
+        shipclass_observation_station_damage_mult = 0.1
+        shipclass_observation_station_hit_points_mult = 0.2
+
+        shipclass_outpost_station_damage_mult = 0.1
+        shipclass_outpost_station_hit_points_mult = 0.2
+
+        shipclass_wormhole_station_damage_mult = 0.1
+        shipclass_wormhole_station_hit_points_mult = 0.2
+
+        shipclass_research_station_damage_mult = 0.1
+        shipclass_research_station_hit_points_mult = 0.2
+
+        shipclass_mining_station_damage_mult = 0.1
+        shipclass_mining_station_hit_points_mult = 0.2
+
+        shipclass_orbital_station_damage_mult = 0.1
+        shipclass_orbital_station_hit_points_mult = 0.2
+    }
+}
+tech_idrinthstellarisimprovedstations_structure_2 = {
+    area = engineering
+    cost = @tier1TechCost
+    cost_per_level = @tier1TechCost
+    tier = 1
+    category = { materials }
+    levels = -1
+    prerequisites = { tech_idrinthstellarisimprovedstations_structure }
+    weight = @repeatableTechWeight
+    weight_modifier = {
+        factor = @repatableTechFactor
+    }
+    ai_weight = {
+        factor = 1.0
+    }
+    weight_groups = {
+        repeatable
+    }
+    mod_weight_if_group_picked = {
+        repeatable = 0.01
+    }
+    modifier = {
+        shipclass_military_station_damage_mult = 0.1
         shipclass_military_station_hit_points_mult = 0.15
-        shipclass_military_station_hitpoints_mult = 0.15
 
         shipclass_observation_station_damage_mult = 0.1
         shipclass_observation_station_hit_points_mult = 0.15
-        shipclass_observation_station_hitpoints_mult = 0.15
 
         shipclass_outpost_station_damage_mult = 0.1
         shipclass_outpost_station_hit_points_mult = 0.15
-        shipclass_outpost_station_hitpoints_mult = 0.15
 
         shipclass_wormhole_station_damage_mult = 0.1
         shipclass_wormhole_station_hit_points_mult = 0.15
-        shipclass_wormhole_station_hitpoints_mult = 0.15
 
         shipclass_research_station_damage_mult = 0.1
         shipclass_research_station_hit_points_mult = 0.15
-        shipclass_research_station_hitpoints_mult = 0.15
 
         shipclass_mining_station_damage_mult = 0.1
         shipclass_mining_station_hit_points_mult = 0.15
-        shipclass_mining_station_hitpoints_mult = 0.15
 
         shipclass_orbital_station_damage_mult = 0.1
         shipclass_orbital_station_hit_points_mult = 0.15
-        shipclass_orbital_station_hitpoints_mult = 0.15
     }
 }
 
 tech_idrinthstellarisimprovedstations_crewtraining = {
     area = society
     cost = @tier1TechCost
-    cost_per_level = @tier1TechCost
     tier = 1
     category = { military_theory }
-    levels = -1
     prerequisites = { }
     weight = @repeatableTechWeight
     weight_modifier = {
@@ -164,49 +175,77 @@ tech_idrinthstellarisimprovedstations_crewtraining = {
         repeatable = 0.01
     }
     modifier = {
-        shipclass_military_station_damage_mult = 0.05
-        shipclass_military_station_fire_rate_mult = 0.15
+        shipclass_military_station_damage_mult = 0.2
+        shipclass_military_station_hit_points_mult = 0.1
+
+        shipclass_observation_station_damage_mult = 0.2
+        shipclass_observation_station_hit_points_mult = 0.1
+
+        shipclass_outpost_station_damage_mult = 0.2
+        shipclass_outpost_station_hit_points_mult = 0.1
+
+        shipclass_wormhole_station_damage_mult = 0.2
+        shipclass_wormhole_station_hit_points_mult = 0.1
+
+        shipclass_research_station_damage_mult = 0.2
+        shipclass_research_station_hit_points_mult = 0.1
+
+        shipclass_mining_station_damage_mult = 0.2
+        shipclass_mining_station_hit_points_mult = 0.1
+
+        shipclass_orbital_station_damage_mult = 0.2
+        shipclass_orbital_station_hit_points_mult = 0.1
+    }
+}
+tech_idrinthstellarisimprovedstations_crewtraining_2 = {
+    area = society
+    cost = @tier1TechCost
+    cost_per_level = @tier1TechCost
+    tier = 1
+    category = { military_theory }
+    levels = -1
+    prerequisites = { tech_idrinthstellarisimprovedstations_crewtraining }
+    weight = @repeatableTechWeight
+    weight_modifier = {
+        factor = @repatableTechFactor
+    }
+    ai_weight = {
+        factor = 1.0
+    }
+    weight_groups = {
+        repeatable
+    }
+    mod_weight_if_group_picked = {
+        repeatable = 0.01
+    }
+    modifier = {
+        shipclass_military_station_damage_mult = 0.2
         shipclass_military_station_hit_points_mult = 0.05
-        shipclass_military_station_hitpoints_mult = 0.05
 
-        shipclass_observation_station_damage_mult = 0.05
-        shipclass_observation_station_fire_rate_mult = 0.15
+        shipclass_observation_station_damage_mult = 0.2
         shipclass_observation_station_hit_points_mult = 0.05
-        shipclass_observation_station_hitpoints_mult = 0.05
 
-        shipclass_outpost_station_damage_mult = 0.05
-        shipclass_outpost_station_fire_rate_mult = 0.15
+        shipclass_outpost_station_damage_mult = 0.2
         shipclass_outpost_station_hit_points_mult = 0.05
-        shipclass_outpost_station_hitpoints_mult = 0.05
 
-        shipclass_wormhole_station_damage_mult = 0.05
-        shipclass_wormhole_station_fire_rate_mult = 0.15
+        shipclass_wormhole_station_damage_mult = 0.2
         shipclass_wormhole_station_hit_points_mult = 0.05
-        shipclass_wormhole_station_hitpoints_mult = 0.05
 
-        shipclass_research_station_damage_mult = 0.05
-        shipclass_research_station_fire_rate_mult = 0.15
+        shipclass_research_station_damage_mult = 0.2
         shipclass_research_station_hit_points_mult = 0.05
-        shipclass_research_station_hitpoints_mult = 0.05
 
-        shipclass_mining_station_damage_mult = 0.05
-        shipclass_mining_station_fire_rate_mult = 0.15
+        shipclass_mining_station_damage_mult = 0.2
         shipclass_mining_station_hit_points_mult = 0.05
-        shipclass_mining_station_hitpoints_mult = 0.05
 
-        shipclass_orbital_station_damage_mult = 0.05
-        shipclass_orbital_station_fire_rate_mult = 0.15
+        shipclass_orbital_station_damage_mult = 0.2
         shipclass_orbital_station_hit_points_mult = 0.05
-        shipclass_orbital_station_hitpoints_mult = 0.05
     }
 }
 tech_idrinthstellarisimprovedstations_shields = {
     area = physics
     cost = @tier1TechCost
-    cost_per_level = @tier1TechCost
     tier = 1
     category = { field_manipulation }
-    levels = -1
     prerequisites = { tech_shields_1 }
     weight = @repeatableTechWeight
 
@@ -223,33 +262,71 @@ tech_idrinthstellarisimprovedstations_shields = {
         repeatable = 0.01
     }
     modifier = {
-        shipclass_military_station_shield_hp_mult = 0.15
-        shipclass_military_station_weapon_range_mult = 0.05
-        shipclass_military_station_shield_hp_add = 100
+        shipclass_military_station_damage_mult = 0.05
+        shipclass_military_station_hit_points_mult = 0.25
 
-        shipclass_observation_station_shield_hp_mult = 0.15
-        shipclass_observation_station_shield_hp_add = 100
-        shipclass_observation_station_weapon_range_mult = 0.05
+        shipclass_observation_station_damage_mult = 0.05
+        shipclass_observation_station_hit_points_mult = 0.25
 
-        shipclass_outpost_station_shield_hp_mult = 0.15
-        shipclass_outpost_station_shield_hp_add = 100
-        shipclass_outpost_station_weapon_range_mult = 0.05
+        shipclass_outpost_station_damage_mult = 0.05
+        shipclass_outpost_station_hit_points_mult = 0.25
 
-        shipclass_wormhole_station_shield_hp_mult = 0.15
-        shipclass_wormhole_station_shield_hp_add = 100
-        shipclass_wormhole_station_weapon_range_mult = 0.05
+        shipclass_wormhole_station_damage_mult = 0.05
+        shipclass_wormhole_station_hit_points_mult = 0.25
 
-        shipclass_research_station_shield_hp_mult = 0.15
-        shipclass_research_station_shield_hp_add = 100
-        shipclass_research_station_weapon_range_mult = 0.05
+        shipclass_research_station_damage_mult = 0.05
+        shipclass_research_station_hit_points_mult = 0.25
 
-        shipclass_mining_station_shield_hp_mult = 0.15
-        shipclass_mining_station_shield_hp_add = 100
-        shipclass_mining_station_weapon_range_mult = 0.05
+        shipclass_mining_station_damage_mult = 0.05
+        shipclass_mining_station_hit_points_mult = 0.25
 
-        shipclass_orbital_station_shield_hp_mult = 0.15
-        shipclass_orbital_station_shield_hp_add = 100
-        shipclass_orbital_station_weapon_range_mult = 0.05
+        shipclass_orbital_station_damage_mult = 0.05
+        shipclass_orbital_station_hit_points_mult = 0.25
+    }
+}
+tech_idrinthstellarisimprovedstations_shields_2 = {
+    area = physics
+    cost = @tier1TechCost
+    cost_per_level = @tier1TechCost
+    tier = 1
+    category = { field_manipulation }
+    levels = -1
+    prerequisites = { tech_idrinthstellarisimprovedstations_shields }
+    weight = @repeatableTechWeight
+
+    weight_modifier = {
+        factor = @repatableTechFactor
+    }
+    ai_weight = {
+        factor = 1.0
+    }
+    weight_groups = {
+        repeatable
+    }
+    mod_weight_if_group_picked = {
+        repeatable = 0.01
+    }
+    modifier = {
+        shipclass_military_station_damage_mult = 0.05
+        shipclass_military_station_hit_points_mult = 0.2
+
+        shipclass_observation_station_damage_mult = 0.05
+        shipclass_observation_station_hit_points_mult = 0.2
+
+        shipclass_outpost_station_damage_mult = 0.05
+        shipclass_outpost_station_hit_points_mult = 0.2
+
+        shipclass_wormhole_station_damage_mult = 0.05
+        shipclass_wormhole_station_hit_points_mult = 0.2
+
+        shipclass_research_station_damage_mult = 0.05
+        shipclass_research_station_hit_points_mult = 0.2
+
+        shipclass_mining_station_damage_mult = 0.05
+        shipclass_mining_station_hit_points_mult = 0.2
+
+        shipclass_orbital_station_damage_mult = 0.05
+        shipclass_orbital_station_hit_points_mult = 0.2
     }
 }
 
@@ -263,7 +340,11 @@ tech_idrinthstellarisimprovedstations_defense = {
     tier = 2
     category = { military_theory }
     levels = 1
-    prerequisites = { tech_ship_armor_2,tech_repeatable_improved_military_station_shields,tech_repeatable_improved_military_station_structure }
+    prerequisites = {
+        tech_ship_armor_2
+        tech_idrinthstellarisimprovedstations_shields
+        tech_idrinthstellarisimprovedstations_structure
+    }
     weight = @repeatableTechWeight
     weight_modifier = {
         factor = @repatableTechFactor
@@ -278,54 +359,19 @@ tech_idrinthstellarisimprovedstations_defense = {
         repeatable = 0.01
     }
     modifier = {
-        shipclass_military_station_hit_points_mult = 0.25
-        shipclass_military_station_hitpoints_mult = 0.25
-        shipclass_military_station_hit_points_add = 250
-        shipclass_military_station_hitpoints_add = 250
-        shipclass_military_station_shield_hp_mult = 0.25
-        shipclass_military_station_shield_hp_add = 250
+        shipclass_military_station_hit_points_mult = 0.65
 
-        shipclass_observation_station_hit_points_mult = 0.25
-        shipclass_observation_station_hitpoints_mult = 0.25
-        shipclass_observation_station_hit_points_add = 250
-        shipclass_observation_station_hitpoints_add = 250
-        shipclass_observation_station_shield_hp_mult = 0.25
-        shipclass_observation_station_shield_hp_add = 250
+        shipclass_observation_station_hit_points_mult = 0.65
 
-        shipclass_outpost_station_hit_points_mult = 0.25
-        shipclass_outpost_station_hitpoints_mult = 0.25
-        shipclass_outpost_station_hit_points_add = 250
-        shipclass_outpost_station_hitpoints_add = 250
-        shipclass_outpost_station_shield_hp_mult = 0.25
-        shipclass_outpost_station_shield_hp_add = 250
+        shipclass_outpost_station_hit_points_mult = 0.65
 
-        shipclass_wormhole_station_hit_points_mult = 0.25
-        shipclass_wormhole_station_hitpoints_mult = 0.25
-        shipclass_wormhole_station_hit_points_add = 250
-        shipclass_wormhole_station_hitpoints_add = 250
-        shipclass_wormhole_station_shield_hp_mult = 0.25
-        shipclass_wormhole_station_shield_hp_add = 250
+        shipclass_wormhole_station_hit_points_mult = 0.65
 
-        shipclass_research_station_hit_points_mult = 0.25
-        shipclass_research_station_hitpoints_mult = 0.25
-        shipclass_research_station_hit_points_add = 250
-        shipclass_research_station_hitpoints_add = 250
-        shipclass_research_station_shield_hp_mult = 0.25
-        shipclass_research_station_shield_hp_add = 250
+        shipclass_research_station_hit_points_mult = 0.65
 
-        shipclass_mining_station_hit_points_mult = 0.25
-        shipclass_mining_station_hitpoints_mult = 0.25
-        shipclass_mining_station_hit_points_add = 250
-        shipclass_mining_station_hitpoints_add = 250
-        shipclass_mining_station_shield_hp_mult = 0.25
-        shipclass_mining_station_shield_hp_add = 250
+        shipclass_mining_station_hit_points_mult = 0.65
 
-        shipclass_orbital_station_hit_points_mult = 0.25
-        shipclass_orbital_station_hitpoints_mult = 0.25
-        shipclass_orbital_station_hit_points_add = 250
-        shipclass_orbital_station_hitpoints_add = 250
-        shipclass_orbital_station_shield_hp_mult = 0.25
-        shipclass_orbital_station_shield_hp_add = 250
+        shipclass_orbital_station_hit_points_mult = 0.65
     }
 }
 
@@ -335,7 +381,7 @@ tech_idrinthstellarisimprovedstations_offence = {
     tier = 2
     category = { military_theory }
     levels = 1
-    prerequisites = { tech_repeatable_improved_military_station_crewtraining }
+    prerequisites = { tech_idrinthstellarisimprovedstations_crewtraining }
     weight = @repeatableTechWeight
     weight_modifier = {
         factor = @repatableTechFactor
@@ -350,33 +396,19 @@ tech_idrinthstellarisimprovedstations_offence = {
         repeatable = 0.01
     }
     modifier = {
-        shipclass_military_station_damage_mult = 0.25
-        shipclass_military_station_fire_rate_mult = 0.25
-        shipclass_military_station_weapon_range_mult = 0.25
+        shipclass_military_station_damage_mult = 0.5
 
-        shipclass_observation_station_damage_mult = 0.25
-        shipclass_observation_station_fire_rate_mult = 0.25
-        shipclass_observation_station_weapon_range_mult = 0.25
+        shipclass_observation_station_damage_mult = 0.5
 
-        shipclass_outpost_station_damage_mult = 0.25
-        shipclass_outpost_station_fire_rate_mult = 0.25
-        shipclass_outpost_station_weapon_range_mult = 0.25
+        shipclass_outpost_station_damage_mult = 0.5
 
-        shipclass_wormhole_station_damage_mult = 0.25
-        shipclass_wormhole_station_fire_rate_mult = 0.25
-        shipclass_wormhole_station_weapon_range_mult = 0.25
+        shipclass_wormhole_station_damage_mult = 0.5
 
-        shipclass_research_station_damage_mult = 0.25
-        shipclass_research_station_fire_rate_mult = 0.25
-        shipclass_research_station_weapon_range_mult = 0.25
+        shipclass_research_station_damage_mult = 0.5
 
-        shipclass_mining_station_damage_mult = 0.25
-        shipclass_mining_station_fire_rate_mult = 0.25
-        shipclass_mining_station_weapon_range_mult = 0.25
+        shipclass_mining_station_damage_mult = 0.5
 
-        shipclass_orbital_station_damage_mult = 0.25
-        shipclass_orbital_station_fire_rate_mult = 0.25
-        shipclass_orbital_station_weapon_range_mult = 0.25
+        shipclass_orbital_station_damage_mult = 0.5
     }
 }
 ###########################
@@ -389,7 +421,10 @@ tech_idrinthstellarisimprovedstations_optimisation = {
     tier = 3
     category = { military_theory }
     levels = 1
-    prerequisites = { tech_improved_military_station_offence,tech_improved_military_station_defence }
+    prerequisites = {
+        tech_idrinthstellarisimprovedstations_offence
+        tech_idrinthstellarisimprovedstations_defence
+    }
     weight = @repeatableTechWeight
     weight_modifier = {
         factor = @repatableTechFactor
@@ -404,75 +439,28 @@ tech_idrinthstellarisimprovedstations_optimisation = {
         repeatable = 0.01
     }
     modifier = {
-        shipclass_military_station_damage_mult = 0.25
-        shipclass_military_station_fire_rate_mult = 0.25
-        shipclass_military_station_weapon_range_mult = 0.25
-        shipclass_military_station_hit_points_mult = 0.25
-        shipclass_military_station_hitpoints_mult = 0.25
-        shipclass_military_station_hit_points_add = 250
-        shipclass_military_station_hitpoints_add = 250
-        shipclass_military_station_shield_hp_mult = 0.25
-        shipclass_military_station_shield_hp_add = 250
+        ship_weapon_range_mult = 0.05
 
-        shipclass_observation_station_damage_mult = 0.25
-        shipclass_observation_station_fire_rate_mult = 0.25
-        shipclass_observation_station_weapon_range_mult = 0.25
-        shipclass_observation_station_hit_points_mult = 0.25
-        shipclass_observation_station_hitpoints_mult = 0.25
-        shipclass_observation_station_hit_points_add = 250
-        shipclass_observation_station_hitpoints_add = 250
-        shipclass_observation_station_shield_hp_mult = 0.25
-        shipclass_observation_station_shield_hp_add = 250
+        shipclass_military_station_damage_mult = 0.5
+        shipclass_military_station_hit_points_mult = 0.65
 
-        shipclass_outpost_station_damage_mult = 0.25
-        shipclass_outpost_station_fire_rate_mult = 0.25
-        shipclass_outpost_station_weapon_range_mult = 0.25
-        shipclass_outpost_station_hit_points_mult = 0.25
-        shipclass_outpost_station_hitpoints_mult = 0.25
-        shipclass_outpost_station_hit_points_add = 250
-        shipclass_outpost_station_hitpoints_add = 250
-        shipclass_outpost_station_shield_hp_mult = 0.25
-        shipclass_outpost_station_shield_hp_add = 250
+        shipclass_observation_station_damage_mult = 0.5
+        shipclass_observation_station_hit_points_mult = 0.65
 
-        shipclass_wormhole_station_damage_mult = 0.25
-        shipclass_wormhole_station_fire_rate_mult = 0.25
-        shipclass_wormhole_station_weapon_range_mult = 0.25
-        shipclass_wormhole_station_hit_points_mult = 0.25
-        shipclass_wormhole_station_hitpoints_mult = 0.25
-        shipclass_wormhole_station_hit_points_add = 250
-        shipclass_wormhole_station_hitpoints_add = 250
-        shipclass_wormhole_station_shield_hp_mult = 0.25
-        shipclass_wormhole_station_shield_hp_add = 250
+        shipclass_outpost_station_damage_mult = 0.5
+        shipclass_outpost_station_hit_points_mult = 0.65
 
-        shipclass_research_station_damage_mult = 0.25
-        shipclass_research_station_fire_rate_mult = 0.25
-        shipclass_research_station_weapon_range_mult = 0.25
-        shipclass_research_station_hit_points_mult = 0.25
-        shipclass_research_station_hitpoints_mult = 0.25
-        shipclass_research_station_hit_points_add = 250
-        shipclass_research_station_hitpoints_add = 250
-        shipclass_research_station_shield_hp_mult = 0.25
-        shipclass_research_station_shield_hp_add = 250
+        shipclass_wormhole_station_damage_mult = 0.5
+        shipclass_wormhole_station_hit_points_mult = 0.65
 
-        shipclass_mining_station_damage_mult = 0.25
-        shipclass_mining_station_fire_rate_mult = 0.25
-        shipclass_mining_station_weapon_range_mult = 0.25
-        shipclass_mining_station_hit_points_mult = 0.25
-        shipclass_mining_station_hitpoints_mult = 0.25
-        shipclass_mining_station_hit_points_add = 250
-        shipclass_mining_station_hitpoints_add = 250
-        shipclass_mining_station_shield_hp_mult = 0.25
-        shipclass_mining_station_shield_hp_add = 250
+        shipclass_research_station_damage_mult = 0.5
+        shipclass_research_station_hit_points_mult = 0.65
 
-        shipclass_orbital_station_damage_mult = 0.25
-        shipclass_orbital_station_fire_rate_mult = 0.25
-        shipclass_orbital_station_weapon_range_mult = 0.25
-        shipclass_orbital_station_hit_points_mult = 0.25
-        shipclass_orbital_station_hitpoints_mult = 0.25
-        shipclass_orbital_station_hit_points_add = 250
-        shipclass_orbital_station_hitpoints_add = 250
-        shipclass_orbital_station_shield_hp_mult = 0.25
-        shipclass_orbital_station_shield_hp_add = 250
+        shipclass_mining_station_damage_mult = 0.5
+        shipclass_mining_station_hit_points_mult = 0.65
+
+        shipclass_orbital_station_damage_mult = 0.5
+        shipclass_orbital_station_hit_points_mult = 0.65
     }
 }
 ###########################
@@ -483,7 +471,7 @@ tech_idrinthstellarisimprovedstations_automatic_repair = {
     area = engineering
     cost = @tier4TechCost
     tier = 4
-    category = { material }
+    category = { materials }
     levels = 1
     prerequisites = { tech_mine_living_metal }
     weight = @repeatableTechWeight
@@ -503,94 +491,6 @@ tech_idrinthstellarisimprovedstations_automatic_repair = {
         ship_auto_repair_add = 0.01
     }
 }
-
-tech_idrinthstellarisimprovedstations_station_repair = {
-    area = engineering
-    cost = @tier4TechCost
-    tier = 4
-    category = { material }
-    levels = 1
-    prerequisites = { tech_idrinthstellarisimprovedstations_automatic_repair }
-    weight = @repeatableTechWeight
-    weight_modifier = {
-        factor = @repatableTechFactor
-    }
-    ai_weight = {
-        factor = 1.0
-    }
-    weight_groups = {
-        repeatable
-    }
-    mod_weight_if_group_picked = {
-        repeatable = 0.01
-    }
-    modifier = {
-        shipclass_military_station_armor_add = 5
-        shipclass_military_station_auto_repair_add = 0.01
-
-        shipclass_observation_station_armor_add = 5
-        shipclass_observation_station_auto_repair_add = 0.01
-
-        shipclass_outpost_station_armor_add = 5
-        shipclass_outpost_station_auto_repair_add = 0.01
-
-        shipclass_wormhole_station_armor_add = 5
-        shipclass_wormhole_station_auto_repair_add = 0.01
-
-        shipclass_research_station_armor_add = 5
-        shipclass_research_station_auto_repair_add = 0.01
-
-        shipclass_mining_station_armor_add = 5
-        shipclass_mining_station_auto_repair_add = 0.01
-
-        shipclass_orbital_station_armor_add = 5
-        shipclass_orbital_station_auto_repair_add = 0.01
-    }
-}
-
-tech_idrinthstellarisimprovedstations_station_repair_2 = {
-    area = engineering
-    cost = @tier4TechCost
-    tier = 4
-    category = { material }
-    levels = 1
-    prerequisites = { tech_idrinthstellarisimprovedstations_station_repair }
-    weight = @repeatableTechWeight
-    weight_modifier = {
-        factor = @repatableTechFactor
-    }
-    ai_weight = {
-        factor = 1.0
-    }
-    weight_groups = {
-        repeatable
-    }
-    mod_weight_if_group_picked = {
-        repeatable = 0.01
-    }
-    modifier = {
-        shipclass_military_station_armor_mult = 0.05
-        shipclass_military_station_auto_repair_add = 0.005
-
-        shipclass_observation_station_armor_mult = 0.05
-        shipclass_observation_station_auto_repair_add = 0.005
-
-        shipclass_outpost_station_armor_mult = 0.05
-        shipclass_outpost_station_auto_repair_add = 0.005
-
-        shipclass_wormhole_station_armor_mult = 0.05
-        shipclass_wormhole_station_auto_repair_add = 0.005
-
-        shipclass_research_station_armor_mult = 0.05
-        shipclass_research_station_auto_repair_add = 0.005
-
-        shipclass_mining_station_armor_mult = 0.05
-        shipclass_mining_station_auto_repair_add = 0.005
-
-        shipclass_orbital_station_armor_mult = 0.05
-        shipclass_orbital_station_auto_repair_add = 0.005
-    }
-}
 tech_idrinthstellarisimprovedstations_workers_training = {
     cost = @tier4TechCost
     area = engineering
@@ -602,64 +502,25 @@ tech_idrinthstellarisimprovedstations_workers_training = {
 
     modifier = {
         shipclass_military_station_build_cost_mult = -0.1
-        shipclass_military_station_upkeep_mult = -0.1
-        shipclass_military_station_armor_mult = 0.05
-        shipclass_military_station_hit_points_add = 50
-        shipclass_military_station_hitpoints_add = 50
+        shipclass_military_station_hit_points_mult = 0.1
 
         shipclass_observation_station_build_cost_mult = -0.1
-        shipclass_observation_station_upkeep_mult = -0.1
-        shipclass_observation_station_armor_mult = 0.05
-        shipclass_observation_station_hit_points_add = 50
-        shipclass_observation_station_hitpoints_add = 50
+        shipclass_observation_station_hit_points_mult = 0.1
 
         shipclass_outpost_station_build_cost_mult = -0.1
-        shipclass_outpost_station_upkeep_mult = -0.1
-        shipclass_outpost_station_armor_mult = 0.05
-        shipclass_outpost_station_hit_points_add = 50
-        shipclass_outpost_station_hitpoints_add = 50
+        shipclass_outpost_station_hit_points_mult = 0.1
 
         shipclass_wormhole_station_build_cost_mult = -0.1
-        shipclass_wormhole_station_upkeep_mult = -0.1
-        shipclass_wormhole_station_armor_mult = 0.05
-        shipclass_wormhole_station_hit_points_add = 50
-        shipclass_wormhole_station_hitpoints_add = 50
+        shipclass_wormhole_station_hit_points_mult = 0.1
 
         shipclass_research_station_build_cost_mult = -0.1
-        shipclass_research_station_upkeep_mult = -0.1
-        shipclass_research_station_armor_mult = 0.05
-        shipclass_research_station_hit_points_add = 50
-        shipclass_research_station_hitpoints_add = 50
+        shipclass_research_station_hit_points_mult = 0.1
 
         shipclass_mining_station_build_cost_mult = -0.1
-        shipclass_mining_station_upkeep_mult = -0.1
-        shipclass_mining_station_armor_mult = 0.05
-        shipclass_mining_station_hit_points_add = 50
-        shipclass_mining_station_hitpoints_add = 50
+        shipclass_mining_station_hit_points_mult = 0.1
 
         shipclass_orbital_station_build_cost_mult = -0.1
-        shipclass_orbital_station_upkeep_mult = -0.1
-        shipclass_orbital_station_armor_mult = 0.05
-        shipclass_orbital_station_hit_points_add = 50
-        shipclass_orbital_station_hitpoints_add = 50
-    }
-}
-tech_idrinthstellarisimprovedstations_improved_border_guards = {
-    cost = @tier4TechCost
-    area = society
-    tier = 4
-    category = { statecraft }
-    prerequisites = { "tech_will_to_power","tech_idrinthstellarisimprovedstations_border_guards" }
-    weight = @repeatableTechWeight
-    modifier = {
-        shipclass_military_station_border_extrusion_range_add = 1
-        shipclass_military_station_border_extrusion_range_mult = 0.05
-
-        shipclass_outpost_station_border_extrusion_range_add = 1
-        shipclass_outpost_station_border_extrusion_range_mult = 0.05
-
-        shipclass_orbital_station_border_extrusion_range_add = 1
-        shipclass_orbital_station_border_extrusion_range_mult = 0.05
+        shipclass_orbital_station_hit_points_mult = 0.1
     }
 }
 ###########################
@@ -670,7 +531,7 @@ tech_idrinthstellarisimprovedstations_ai_repaired_armor = {
     area = physics
     cost = @tier5TechCost
     tier = 5
-    category = { material }
+    category = { materials }
     levels = 1
     prerequisites = { tech_idrinthstellarisimprovedstations_automatic_repair }
     weight = @repeatableTechWeight
@@ -697,7 +558,7 @@ tech_idrinthstellarisimprovedstations_ai_optimised_armor = {
     cost = @tier5TechCost
     cost_per_level = @tier5TechCost
     tier = 5
-    category = { material }
+    category = { materials }
     levels = -1
     is_rare = yes
     prerequisites = { }
@@ -715,50 +576,18 @@ tech_idrinthstellarisimprovedstations_ai_optimised_armor = {
         repeatable = 0.01
     }
     modifier = {
-        shipclass_military_station_armor_mult = 0.1
-        shipclass_military_station_hit_points_add = 125
-        shipclass_military_station_hitpoints_add = 125
+        shipclass_mining_station_hit_points_mult = 0.3
 
-        shipclass_observation_station_armor_mult = 0.1
-        shipclass_observation_station_hit_points_add = 125
-        shipclass_observation_station_hitpoints_add = 125
+        shipclass_observation_station_hit_points_mult = 0.3
 
-        shipclass_outpost_station_armor_mult = 0.1
-        shipclass_outpost_station_hit_points_add = 125
-        shipclass_outpost_station_hitpoints_add = 125
+        shipclass_outpost_station_hit_points_mult = 0.3
 
-        shipclass_wormhole_station_armor_mult = 0.1
-        shipclass_wormhole_station_hit_points_add = 125
-        shipclass_wormhole_station_hitpoints_add = 125
+        shipclass_wormhole_station_hit_points_mult = 0.3
 
-        shipclass_research_station_armor_mult = 0.1
-        shipclass_research_station_hit_points_add = 125
-        shipclass_research_station_hitpoints_add = 125
+        shipclass_research_station_hit_points_mult = 0.3
 
-        shipclass_mining_station_armor_mult = 0.1
-        shipclass_mining_station_hit_points_add = 125
-        shipclass_mining_station_hitpoints_add = 125
+        shipclass_mining_station_hit_points_mult = 0.3
 
-        shipclass_orbital_station_armor_mult = 0.1
-        shipclass_orbital_station_hit_points_add = 125
-        shipclass_orbital_station_hitpoints_add = 125
-    }
-}
-tech_idrinthstellarisimprovedstations_border_guard_improvements = {
-    cost = @tier5TechCost
-    cost_per_level = @tier5TechCost
-    area = society
-    tier = 5
-    category = { statecraft }
-    is_rare = no
-    levels = -1
-    prerequisites = { "tech_will_to_power","tech_idrinthstellarisimprovedstations_improved_border_guards" }
-    weight = @repeatableTechWeight
-    modifier = {
-        shipclass_military_station_border_extrusion_range_mult = 0.05
-
-        shipclass_outpost_station_border_extrusion_range_mult = 0.05
-
-        shipclass_orbital_station_border_extrusion_range_mult = 0.05
+        shipclass_orbital_station_hit_points_mult = 0.3
     }
 }

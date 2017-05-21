@@ -32,8 +32,8 @@ sm_idrinthstellarisimprovedstations_fleetbase = {
     icon = "GFX_spaceport_synchronized_defenses"
     section = "SCIENCE_SPACEPORT_SECTION"
     construction_days = 720
-    prerequisites = { }
-    spaceport_level = 6
+    prerequisites = { tech_spaceport_5 }
+    spaceport_level = 5
     cost = {
         minerals = 500
     }

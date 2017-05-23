@@ -2,7 +2,10 @@ sm_idrinthstellarisimprovedstations_strengthened_defenses = {
     icon = "GFX_spaceport_synchronized_defenses"
     section = "SCIENCE_SPACEPORT_SECTION"
     construction_days = 360
-    prerequisites = { tech_ship_armor_2 }
+    prerequisites = {
+        tech_ship_armor_2
+        tech_spaceport_3
+    }
     spaceport_level = 3
     cost = {
         minerals = 250
@@ -57,7 +60,6 @@ sm_idrinthstellarisimprovedstations_fleetbase = {
     station_modifier = {
         ship_border_extrusion_range_add = 1
         ship_hitpoints_add = 500
-
         ship_armor_add = 5
     }
 }

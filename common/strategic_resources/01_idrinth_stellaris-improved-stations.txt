@@ -1,6 +1,5 @@
-sr_engineering_testground = {
+sr_idrinthstellarisimprovedstations_engineering_testground = {
     AI_category = strategic_resource
-    prerequisites = { }
     tradable = no
     is_rare = yes
     is_global = yes

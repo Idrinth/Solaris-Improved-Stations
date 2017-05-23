@@ -34,7 +34,7 @@ tech_idrinthstellarisimprovedstations_base = {
 ###########################
 tech_idrinthstellarisimprovedstations_workers = {
     cost = @tier1TechCost
-    area = engineering
+    area = society
     tier = 1
     category = { voidcraft }
     prerequisites = { }

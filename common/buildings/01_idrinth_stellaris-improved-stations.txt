@@ -1,4 +1,4 @@
-building_engineering_academy = {
+building_idrinthstellarisimprovedstations_engineering_academy = {
     base_buildtime = 720
     empire_unique = yes
 

@@ -45,7 +45,7 @@ country_edict = {
     }
 }
 country_edict = {
-    name = "self_repair"
+    name = "idrinthstellarisimprovedstations_self_repair"
     modifier = {
         ship_auto_repair_add = 0.005
         ship_shield_regen_add = 0.1

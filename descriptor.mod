@@ -1,4 +1,4 @@
-name="Idrinth: Stellaris Improved Stations"
+﻿name="Idrinth: Stellaris Improved Stations"
 path="mod/idrinth-stellaris-improved-stations"
 tags={
     "Military"

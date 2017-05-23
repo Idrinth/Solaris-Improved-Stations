@@ -43,7 +43,7 @@ sm_idrinthstellarisimprovedstations_fleetbase = {
         influence = 1
     }
     produced_resources = {
-        sr_engineering_testground=1
+        sr_idrinthstellarisimprovedstations_engineering_testground=1
     }
     orbit_modifier = {
         ship_upkeep_mult = -0.2

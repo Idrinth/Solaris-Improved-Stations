@@ -1,0 +1,200 @@
+#
+# TIER 1
+#
+ship_section_template = {
+	key = "DEFAULT_ORBITAL_STATION_SECTION_T1"
+	ship_size = orbital_station
+	fits_on_slot = mid
+	entity = "orbital_station_core_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	small_utility_slots = 3
+	medium_utility_slots = 3
+	large_utility_slots = 3
+}
+ship_section_template = {
+	key = "CORE_SPACEPORT_SECTION_T1"
+	ship_size = orbital_station
+	entity = "orbital_station_core_entity"
+	icon = "GFX_ship_part_core_mid"
+	fits_on_slot = "1"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_04"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_06"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_08"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_04"
+	}
+}
+#
+# TIER 2
+#
+ship_section_template = {
+	key = "DEFAULT_ORBITAL_STATION_SECTION_T2"
+	ship_size = orbital_station
+	fits_on_slot = mid
+	entity = "orbital_station_core_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	small_utility_slots = 4
+	medium_utility_slots = 4
+	large_utility_slots = 4
+}
+ship_section_template = {
+	key = "CORE_SPACEPORT_SECTION_T2"
+	ship_size = orbital_station
+	entity = "orbital_station_core_entity"
+	icon = "GFX_ship_part_core_mid"
+	fits_on_slot = "1"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}
+  component_slot = {
+		name = "LARGE_GUN_03"
+		slot_size = extra_large
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_04"
+		slot_size = extra_large
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_04"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_06"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_03"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_08"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_04"
+	}
+}
